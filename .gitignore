@@ -1,0 +1,24 @@
+#TBD
+
+**/.checkstyle
+**/.classpath
+**/.factorypath
+**/.fbExcludeFilterFile
+**/.gitignore
+**/.pmd
+**/.pmdruleset.xml
+**/.checkstyle
+**/.project
+**/.settings
+**/.springBeans
+**/target
+.project
+.settings
+target
+
+.idea/
+*.iml
+
+# "_not_ to be ignored" lines below, "to be ignored" lines above
+!.gitignore
+styles.scss.cache
