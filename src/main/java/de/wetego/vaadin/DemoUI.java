@@ -5,15 +5,16 @@ import javax.servlet.annotation.WebServlet;
 import com.vaadin.annotations.PreserveOnRefresh;
 import com.vaadin.annotations.Theme;
 import com.vaadin.annotations.Title;
+import com.vaadin.annotations.Widgetset;
 import com.vaadin.annotations.VaadinServletConfiguration;
 import com.vaadin.server.VaadinRequest;
 import com.vaadin.spring.annotation.SpringUI;
 import com.vaadin.spring.server.SpringVaadinServlet;
 import com.vaadin.ui.Button;
-import com.vaadin.ui.Label;
 import com.vaadin.ui.TextField;
 import com.vaadin.ui.UI;
 import com.vaadin.ui.VerticalLayout;
+import com.vaadin.v7.ui.Label;
 
 
 /**
@@ -24,6 +25,7 @@ import com.vaadin.ui.VerticalLayout;
 @Title ( "Vaadin8 - Spring Boot Application" )
 @SpringUI
 @PreserveOnRefresh
+@Widgetset("MyAppWidgetset")
 public class DemoUI extends UI {
 
     @Override
