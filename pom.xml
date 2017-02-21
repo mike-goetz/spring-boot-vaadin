@@ -12,12 +12,12 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <spring.platform.version>Athens-SR1</spring.platform.version>
-        <spring.boot.version>1.4.2.RELEASE</spring.boot.version>
+        <spring.platform.version>Brussels-RELEASE</spring.platform.version>
+        <spring.boot.version>1.5.1.RELEASE</spring.boot.version>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
-        <vaadin.version>8.0.0.beta1</vaadin.version>
-        <vaadin.plugin.version>8.0.0.beta1</vaadin.plugin.version>
+        <vaadin.version>8.0.0.rc1</vaadin.version>
+        <vaadin.plugin.version>8.0.0.rc1</vaadin.plugin.version>
     </properties>
 
     <dependencies>
