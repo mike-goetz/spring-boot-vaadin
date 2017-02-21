@@ -54,6 +54,16 @@
             <groupId>com.vaadin</groupId>
             <artifactId>vaadin-themes</artifactId>
         </dependency>
+
+        <dependency>
+            <groupId>com.vaadin</groupId>
+            <artifactId>vaadin-compatibility-server</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.vaadin</groupId>
+            <artifactId>vaadin-compatibility-client</artifactId>
+        </dependency>
+
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
@@ -94,6 +104,7 @@
                     <!-- You are free to mark this as permanently ignored in Eclipse -->
                     <execution>
                         <configuration>
+                            <extraJvmArgs>-Xmx1024M</extraJvmArgs> <!-- Lower value can cause OutOfMemoryErrors for 8.0-SNAPSHOT -->
                             <!-- if you don't specify any modules, the plugin will find them -->
                         </configuration>
                         <goals>
