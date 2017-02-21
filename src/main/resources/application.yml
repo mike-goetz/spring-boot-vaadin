@@ -1,0 +1,10 @@
+server:
+  port: ${port:8080}
+
+vaadin:
+  servlet:
+    # We don't want Vaadin's heart beat signal to keep the session alive
+    close-idle-sessions: true
+
+    # The session timeout should be a multiple of the heartbeat interval
+    heartbeat-interval: 15
