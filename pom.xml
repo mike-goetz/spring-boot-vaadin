@@ -3,6 +3,12 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <modelVersion>4.0.0</modelVersion>
 
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>1.5.1.RELEASE</version>
+    </parent>
+
     <groupId>de.wetego</groupId>
     <artifactId>spring-boot-vaadin</artifactId>
     <version>1.0</version>
@@ -13,11 +19,11 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <spring.platform.version>Brussels-RELEASE</spring.platform.version>
-        <spring.boot.version>1.5.1.RELEASE</spring.boot.version>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
         <vaadin.version>8.0.0.rc1</vaadin.version>
         <vaadin.plugin.version>8.0.0.rc1</vaadin.plugin.version>
+        <jetty.version>9.3.16.v20170120</jetty.version>
     </properties>
 
     <dependencies>
@@ -72,11 +78,9 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-                <version>${spring.boot.version}</version>
             </plugin>
             <plugin>
                 <artifactId>maven-war-plugin</artifactId>
-                <version>3.0.0</version>
                 <configuration>
                     <failOnMissingWebXml>false</failOnMissingWebXml>
                 </configuration>
@@ -106,14 +110,6 @@
 
     <dependencyManagement>
         <dependencies>
-            <!-- Import dependency management from Spring Boot -->
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-dependencies</artifactId>
-                <version>${spring.boot.version}</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
             <!-- Spring Platform -->
             <dependency>
                 <groupId>io.spring.platform</groupId>
