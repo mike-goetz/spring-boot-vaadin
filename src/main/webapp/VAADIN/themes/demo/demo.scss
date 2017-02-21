@@ -9,10 +9,18 @@ $v-selection-color: #2D6998;
 // Defines the border used by all components.
 $v-border-radius: 0px;
 
-// Affects the color of some component elements, e.g Button, Panel title, etc
-$v-background-color: hsl(360, 100%, 100%);
 // Affects the color of content areas, e.g  Panel and Window content, TextField input etc
-$v-app-background-color: $v-background-color;
+$v-app-background-color: hsl(0, 0%, 100%);
+
+// Defines colors for indicating status (focus, success, failure)
+$v-focus-color: #197de1;
+$v-friendly-color: #2c9720;
+$v-error-indicator-color: #ed473b;
+
+// Affects the visual appearance of all components
+$v-gradient: none;
+$v-bevel-depth: 30%;
+$v-shadow-opacity: 0%;
 
 @import "../valo/valo.scss";
 
