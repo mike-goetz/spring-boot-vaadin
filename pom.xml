@@ -6,23 +6,23 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>1.5.1.RELEASE</version>
+        <version>1.5.2.RELEASE</version>
     </parent>
 
     <groupId>de.wetego</groupId>
     <artifactId>spring-boot-vaadin</artifactId>
-    <version>1.0</version>
+    <version>1.1</version>
     <packaging>war</packaging>
 
     <name>Vaadin 8 - Spring Boot Demo</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <spring.platform.version>Brussels-RELEASE</spring.platform.version>
+        <spring.platform.version>Brussels-SR1</spring.platform.version>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
-        <vaadin.version>8.0.0.rc1</vaadin.version>
-        <vaadin.plugin.version>8.0.0.rc1</vaadin.plugin.version>
+        <vaadin.version>8.0.4</vaadin.version>
+        <vaadin.plugin.version>8.0.4</vaadin.plugin.version>
         <jetty.version>9.3.16.v20170120</jetty.version>
     </properties>
 
